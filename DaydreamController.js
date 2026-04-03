@@ -107,5 +107,5 @@ controller.onStateChange( function ( state ) {
 });
 const btn = document.createElement("button");
 btn.onclick = () => controller.connect();
-btn.innerText = "connect"
-document.body.appendChild(btn)
+btn.innerText = "connect";
+document.body.appendChild(btn);
