@@ -101,3 +101,11 @@ function DaydreamController() {
 	}
 
 }
+var controller = new DaydreamController();
+controller.onStateChange( function ( state ) {
+    console.log(state);
+});
+const btn = document.createElement("button");
+btn.onclick = () => controller.connect();
+btn.innerText = "connect"
+document.body.appendChild(btn)
