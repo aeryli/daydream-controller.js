@@ -36,6 +36,7 @@
 
 				var controller = new DaydreamController();
 				controller.onStateChange( function ( state ) {
+					print(controller)
 
 					textarea.textContent = JSON.stringify( state, null, '\t' );
 
